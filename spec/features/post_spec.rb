@@ -1,9 +1,10 @@
 require 'rails_helper'
-
-describe 'navigate' do
   before(:context) do
     @post = Post.create(title: "My Post", description: "My post desc")
   end
+
+describe 'navigate' do
+
 
   it 'shows the title on the show page in a h1 tag' do
     visit post_path(@post) #"/posts/#{@post.id}"
